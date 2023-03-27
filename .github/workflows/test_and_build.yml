@@ -35,6 +35,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+          cache: 'maven'
       # Build the application using Maven
       - name: Build with Maven
         run: mvn -B package -DskipTests --file pom.xml
@@ -48,5 +49,3 @@ jobs:
           name: RunnableJar
           #From this path
           path: staging
-
-
