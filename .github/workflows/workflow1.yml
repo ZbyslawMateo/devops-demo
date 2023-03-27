@@ -1,7 +1,7 @@
 name: CI Pipeline (DOC1)
 on:
 #Manually trigger workflow runs
-workflow_dispatch:
+  workflow_dispatch:
 #Trigger the workflow on push from the master/main branch
   push:
     branches: [ master]
@@ -13,7 +13,7 @@ jobs:
   # Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
   # Job's steps
-  steps:
+    steps:
   # Check-out your repository
     - uses: actions/checkout@v3
     - name: Run a one-line script
