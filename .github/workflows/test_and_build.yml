@@ -44,9 +44,9 @@ jobs:
         #This uploads artifacts from your workflow 
         uses: actions/upload-artifact@v3
         with:
-        #Set artifact name 
-        name: RunnableJar
-        #From this path
-        path: staging
+          #Set artifact name 
+          name: RunnableJar
+          #From this path
+          path: staging
 
-        
+
